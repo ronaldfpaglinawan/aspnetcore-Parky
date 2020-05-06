@@ -43,7 +43,19 @@ namespace ParkyAPI
                 options.SwaggerDoc("ParkyOpenAPISpec", new Microsoft.OpenApi.Models.OpenApiInfo()
                 {
                     Title = "Parky API",
-                    Version = "1"
+                    Version = "1",
+                    Description = "Udemy Parky API",
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact()
+                    {
+                        Email = "ronaldpaglinawan@live.com.ph",
+                        Name = "Ronald Paglinawan",
+                        Url = new Uri("https://www.linkedin.com/in/ronald-fornis-paglinawan")
+                    },
+                    License = new Microsoft.OpenApi.Models.OpenApiLicense()
+                    {
+                        Name = "MIT License",
+                        Url = new Uri("https://en.wikipedia.org/wiki/MIT_License")
+                    }
                 });
                 var xmlCommentFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentFile);
