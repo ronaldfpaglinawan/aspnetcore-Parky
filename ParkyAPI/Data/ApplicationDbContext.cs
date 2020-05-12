@@ -16,5 +16,7 @@ namespace ParkyAPI.Data
         }
 
         public DbSet<NationalParkDTO> NationalParks { get; set; }
+
+        public DbSet<Trail> Trails { get; set; }
     }
 }
